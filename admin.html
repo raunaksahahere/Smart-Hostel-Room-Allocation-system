@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/data.js" defer></script>
+  <script type="module" src="js/admin.js"></script>
+</head>
+<body>
+
+  <h1>Admin Dashboard</h1>
+
+  <div class="card">
+    <h3>Add Room</h3>
+    <input id="roomId" placeholder="Room ID">
+    <select id="roomType">
+      <option>Single</option>
+      <option>Double</option>
+      <option>Dorm</option>
+    </select>
+    <input id="price" type="number" placeholder="Price">
+    <button id="addRoomBtn">Add Room</button>
+  </div>
+
+  <div class="card">
+    <h3>Allocation Engine</h3>
+    <button id="allocateBtn">Run Auto Allocation</button>
+  </div>
+
+  <div class="card">
+    <h3>Results</h3>
+    <ul id="resultList"></ul>
+  </div>
+
+</body>
+</html>
